@@ -1,0 +1,1 @@
+{"kind":"singleType","collectionName":"donate","info":{"singularName":"donate","pluralName":"donates","displayName":"Donate"},"options":{"draftAndPublish":true},"pluginOptions":{},"attributes":{"contentSections":{"type":"dynamiczone","components":["head.donate-seo","sections.donate-landing","sections.subscribe-teaser","sections.newsletter"]}}}

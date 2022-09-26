@@ -1,0 +1,1 @@
+{"collectionName":"components_sections_about_landing","info":{"displayName":"About Landing","icon":"robot"},"attributes":{"preheading":{"type":"string"},"heading":{"type":"string"},"leadingSentence":{"type":"text"},"body":{"type":"richtext"},"image":{"allowedTypes":["images"],"type":"media","multiple":false,"required":false}}}

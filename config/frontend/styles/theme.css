@@ -1,0 +1,121 @@
+/* Theme */
+
+:root {
+  --primary-h: 0;
+  --primary-s: 0%;
+  --primary-l: 15%;
+  --primary-hsl: var(--primary-h), var(--primary-s), var(--primary-l);
+
+  --primary: hsl(var(--primary-hsl));
+  --primary-hs: var(--primary-h), var(--primary-s);
+  --primary-10: hsl(var(--primary-hs), 90%);
+  --primary-20: hsl(var(--primary-hs), 80%);
+  --primary-30: hsl(var(--primary-hs), 70%);
+  --primary-40: hsl(var(--primary-hs), 60%);
+  --primary-50: hsl(var(--primary-hs), 50%);
+  --primary-60: hsl(var(--primary-hs), 40%);
+  --primary-70: hsl(var(--primary-hs), 30%);
+  --primary-80: hsl(var(--primary-hs), 20%);
+  --primary-90: hsl(var(--primary-hs), 10%);
+  --primary-warm: hsl(
+    calc(var(--primary-h) + 80),
+    var(--primary-s),
+    var(--primary-l)
+  );
+  --primary-cold: hsl(
+    calc(var(--primary-h) - 80),
+    var(--primary-s),
+    var(--primary-l)
+  );
+
+  --primary-low: hsl(
+    var(--primary-h),
+    calc(var(--primary-s) / 2),
+    var(--primary-l)
+  );
+  --primary-lowest: hsl(
+    var(--primary-h),
+    calc(var(--primary-s) / 4),
+    var(--primary-l)
+  );
+
+  --primary-light: hsl(
+    var(--primary-h),
+    var(--primary-s),
+    calc(var(--primary-l) / 0.9)
+  );
+  --primary-dark: hsl(
+    var(--primary-h),
+    var(--primary-s),
+    calc(var(--primary-l) * 0.9)
+  );
+
+  /* Each color in the palette may have an opposite color specified (used for inverted text, icons, etc) */
+  --primary-opposite-h: 0;
+  --primary-opposite-s: 0%;
+  --primary-opposite-l: 100%;
+  --primary-opposite-hsl: var(--primary-opposite-h), var(--primary-opposite-s),
+    var(--primary-opposite-l);
+  --primary-opposite: hsl(var(--primary-opposite-hsl));
+
+  --secondary-h: 20;
+  --secondary-s: 64%;
+  --secondary-l: 53%;
+  --secondary-hsl: var(--secondary-h), var(--secondary-s), var(--secondary-l);
+
+  --secondary: hsl(var(--secondary-hsl));
+  --secondary-hs: var(--secondary-h), var(--secondary-s);
+  --secondary-10: hsl(var(--secondary-hs), 90%);
+  --secondary-20: hsl(var(--secondary-hs), 80%);
+  --secondary-30: hsl(var(--secondary-hs), 70%);
+  --secondary-40: hsl(var(--secondary-hs), 60%);
+  --secondary-50: hsl(var(--secondary-hs), 50%);
+  --secondary-60: hsl(var(--secondary-hs), 40%);
+  --secondary-70: hsl(var(--secondary-hs), 30%);
+  --secondary-80: hsl(var(--secondary-hs), 20%);
+  --secondary-90: hsl(var(--secondary-hs), 10%);
+  --secondary-warm: hsl(
+    calc(var(--secondary-h) + 80),
+    var(--secondary-s),
+    var(--secondary-l)
+  );
+  --secondary-cold: hsl(
+    calc(var(--secondary-h) - 80),
+    var(--secondary-s),
+    var(--secondary-l)
+  );
+
+  --secondary-low: hsl(
+    var(--secondary-h),
+    calc(var(--secondary-s) / 2),
+    var(--secondary-l)
+  );
+  --secondary-lowest: hsl(
+    var(--secondary-h),
+    calc(var(--secondary-s) / 4),
+    var(--secondary-l)
+  );
+
+  --secondary-light: hsl(
+    var(--secondary-h),
+    var(--secondary-s),
+    calc(var(--secondary-l) / 0.9)
+  );
+  --secondary-dark: hsl(
+    var(--secondary-h),
+    var(--secondary-s),
+    calc(var(--secondary-l) * 0.9)
+  );
+
+  /* Each color in the palette may have an opposite color specified (used for inverted text, icons, etc) */
+  --secondary-opposite-h: 0;
+  --secondary-opposite-s: 0%;
+  --secondary-opposite-l: 100%;
+  --secondary-opposite-hsl: var(--secondary-opposite-h),
+    var(--secondary-opposite-s), var(--secondary-opposite-l);
+  --secondary-opposite: hsl(var(--secondary-opposite-hsl));
+}
+
+.line-break {
+  white-space: pre-wrap;
+}

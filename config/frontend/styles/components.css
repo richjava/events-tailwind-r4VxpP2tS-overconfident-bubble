@@ -1,0 +1,234 @@
+@import "tailwindcss/components";
+/* Custom component styles */
+
+.pre-headline-secondary {
+  @apply text-secondary tracking-widest leading-none uppercase text-xs pl-4 py-1 mb-2 relative;
+}
+
+.pre-headline-secondary::before {
+  content: "";
+  top: 50%;
+  transform: translate(0, -50%);
+  @apply border-l-4 border-secondary absolute left-0 h-full opacity-75;
+}
+
+.pre-headline-white {
+  @apply text-white tracking-widest leading-none uppercase text-xs pl-4 py-1 mb-2 relative;
+}
+
+.pre-headline-white::before {
+  content: "";
+  top: 50%;
+  transform: translate(0, -50%);
+  @apply border-l-4 border-white absolute left-0 h-full opacity-75;
+}
+
+@screen md {
+  .media-item-card:nth-child(odd) {
+    @apply mr-2;
+  }
+
+  .media-item-card:nth-child(even) {
+    @apply ml-2;
+  }
+}
+
+@screen lg {
+  .media-item-card:nth-child(odd) {
+    @apply mr-4;
+  }
+
+  .media-item-card:nth-child(even) {
+    @apply ml-4;
+  }
+}
+
+@screen xl {
+  .media-item-card:nth-child(2) {
+    @apply mt-24;
+  }
+}
+
+.bg-squares {
+  @apply opacity-25;
+  @apply absolute;
+  background-image: linear-gradient(to bottom, transparent 35%, #fff 35%),
+    linear-gradient(to right, #ccc 35%, #fff 35%);
+  background-size: 20px 20px, 20px 20px;
+  width: 300px;
+  height: 600px;
+  top: -10px;
+  right: -188px;
+  z-index: -1;
+}
+
+@screen md {
+  .bg-squares {
+    top: 8px;
+    right: -8px;
+  }
+}
+
+@screen xl {
+  .bg-squares {
+    top: 120px;
+    right: -110px;
+  }
+}
+
+.bg-squares-horizontal {
+  @apply opacity-25;
+  @apply absolute;
+  @apply mx-auto;
+  @apply w-full;
+  background-image: linear-gradient(to bottom, transparent 35%, #fff 35%),
+    linear-gradient(to right, #ccc 35%, #fff 35%);
+  background-size: 20px 20px, 20px 20px;
+  height: 410px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+@screen lg {
+  .bg-squares-horizontal {
+    @apply w-4/5;
+  }
+}
+
+@screen xl {
+  .bg-squares-horizontal {
+    @apply w-3/5;
+  }
+}
+
+.dropcap p:first-child:first-letter {
+  @apply text-black font-display pr-2 float-left;
+  font-size: 60px;
+  line-height: 50px;
+}
+
+.blockquote-apostrophy {
+  @apply absolute;
+
+  right: 40px;
+  bottom: -25px;
+}
+
+.about-blockquote p {
+  @apply text-center mb-0;
+}
+
+.home-about-image {
+  /* height: 300px; */
+  width: 500px;
+}
+
+@screen md {
+  .home-about-image {
+    /* width:100%; */
+    width: 500px;
+  }
+}
+
+@screen lg {
+  .home-about-image {
+    height: 750px;
+    /* height: 750px; */
+  }
+}
+
+.home-volunteer-image {
+  height: 300px;
+}
+
+@screen md {
+  .home-volunteer-image {
+    height: 400px;
+  }
+}
+
+@screen lg {
+  .home-volunteer-image {
+    height: 800px;
+  }
+}
+
+@screen xl {
+  .home-volunteer-image {
+    height: 900px;
+  }
+}
+
+.privacy h4,
+.terms h3,
+.terms h4 {
+  @apply font-sans font-bold;
+}
+
+.terms p {
+  @apply text-primary-50 leading-7;
+}
+
+.cta-generic-img {
+  object-position: 0 10%;
+}
+
+@screen md {
+  .home-volunteer-image {
+    object-position: center center;
+  }
+}
+
+/* H o n e y p o t */
+.ohno {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  z-index: -1;
+}
+
+.form-radio {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-print-color-adjust: exact;
+          color-adjust: exact;
+  display: inline-block;
+  vertical-align: middle;
+  background-origin: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  flex-shrink: 0;
+  border-radius: 100%;
+  height: 1em;
+  width: 1em;
+  background-color: #fff;
+  border-color: #e2e8f0;
+  border-width: 1px;
+}
+
+.form-radio:checked {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e");
+  border-color: transparent;
+  background-color: currentColor;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media not print {
+  .form-radio::-ms-check {
+    border-width: 1px;
+    color: transparent;
+    background: inherit;
+    border-color: inherit;
+    border-radius: inherit;
+  }
+}

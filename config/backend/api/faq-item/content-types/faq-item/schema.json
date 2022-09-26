@@ -1,0 +1,1 @@
+{"kind":"collectionType","collectionName":"faq_items","info":{"singularName":"faq-item","pluralName":"faq-items","displayName":"FAQ Items","description":"Frequently asked question items"},"options":{"increments":true,"timestamps":true,"draftAndPublish":true},"attributes":{"question":{"type":"string","required":true},"answer":{"type":"richtext","required":true}}}

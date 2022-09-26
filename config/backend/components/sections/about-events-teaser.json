@@ -1,0 +1,1 @@
+{"collectionName":"components_sections_about_events_teaser","info":{"displayName":"About Events Teaser","icon":"robot"},"attributes":{"body":{"type":"richtext"},"image":{"allowedTypes":["images"],"type":"media","multiple":false,"required":false},"ctaText":{"type":"string"},"ctaUrl":{"type":"string"}}}

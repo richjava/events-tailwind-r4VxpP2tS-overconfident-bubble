@@ -1,0 +1,1 @@
+{"collectionName":"components_sections_volunteer_teaser","info":{"displayName":"Volunteer Teaser","icon":"heading"},"attributes":{"preheading":{"type":"string"},"heading":{"type":"string"},"body":{"type":"richtext"},"image":{"allowedTypes":["images"],"type":"media","multiple":false,"required":false},"ctaText":{"type":"string"},"ctaUrl":{"type":"string"}}}

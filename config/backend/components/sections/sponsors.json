@@ -1,0 +1,1 @@
+{"collectionName":"components_sections_sponsors","info":{"displayName":"Sponsors","icon":"heading"},"attributes":{"preheading":{"type":"string"},"heading":{"type":"string"},"body":{"type":"richtext"},"ctaText":{"type":"string"},"ctaUrl":{"type":"string"}}}
